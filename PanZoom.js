@@ -174,8 +174,8 @@ class PanZoom {
 
     loadImageAndStart(imgSrc) {
         // Set canvas image
-		this.img = new Image();
-		this.img.onload = () => {
+        this.img = new Image();
+        this.img.onload = () => {
             // Get pixel width and height of image
             this.width  = this.img.width;
             this.height = this.img.height;
@@ -192,9 +192,9 @@ class PanZoom {
             // Initial draw
             this.resizeCanvas();
             this.minScale = this.scale;
-		}
+        }
         // Set image source, img.onLoad is called once loaded
-		this.img.src = imgSrc;
+        this.img.src = imgSrc;
     }
 
     initializeMouseListener() {
